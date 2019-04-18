@@ -1,0 +1,25 @@
+
+
+- Create project folder
+- Create server / client
+- npm init -y
+- Dev Dependencies:
+	- npm i -D nodemon webpack webpack-cli mocha
+- Dependencies
+	- npm i mongodb express body-parser
+- Edit package.json, add server:dev, build, maybe seeds to scripts section
+- In server/ folder, we create helpers/, db/, server.js file
+- (When we run our seeds file, it's mongo < server/db/seeds.js)
+- in client/ folder, we create src/, public/.
+- Inside src/, we need app.js, models/, helpers/, views/
+- Inside public/, we need index.html, css/, js/, images/
+- Set up index.html, add a script tag pointing to bundle.js
+- create webpack.config.js and wire everything up
+- create .gitignore file with node_modules, bundle.js
+- git add, git commit, git push
+
+If npm run build fails, we need to use older version of webpack.
+
+- delete node_modules folder
+- go into package.json, and change the version to "4.2.0"
+- npm install, run build again

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  background-color: #757575
+}
+
+.page-title {
+  text-align: center;
+  padding: 20px;
+}
+
+.planets-menu ol {
+  text-align: center;
+  padding: 20px;
+}
+
+.planets-menu ol > li{
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.planets-menu ol > li:hover{
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.planet-details {
+  margin: 0 auto;
+  width: 30vw;
+  text-align: justify;
+}
+
+.planet-detail-element {
+  text-align: center;
+}
+
+
+img {
+  width: 400px;
+}

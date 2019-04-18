@@ -1,0 +1,16 @@
+.fact-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: 0 auto;
+  align-self: center;
+}
+
+.fact-box div {
+  flex-basis: 25%;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #446197;
+  border-radius: 5px;
+  background-color: #fffff7
+}

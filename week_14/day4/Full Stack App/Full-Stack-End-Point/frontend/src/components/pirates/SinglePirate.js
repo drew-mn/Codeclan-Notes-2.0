@@ -1,0 +1,38 @@
+import React  from 'react';
+import { Link } from 'react-router-dom'
+
+const SinglePirate = (props) => {
+
+
+  if(!props.pirate){
+    return null;
+  }
+
+  const raids = props.pirate.raids.map((raid, index) => {
+    return <li key={index}>{raid.location}</li>
+  })
+
+  function onDelete(){
+    props.handleDelete(props.pirate.id)
+  }
+
+  return (
+    <div className="component">
+        <p>
+          {props.pirate.firstName} {props.pirate.lastName}
+        </p>
+      <p>Age: {props.pirate.age}</p>
+      <p>Ship: {props.pirate.ship.name}</p>
+      Raids:
+      <ul>
+      {raids}
+      </ul>
+      <button onClick={onDelete}>Delete Pirate</button>
+      <Link to={'/pirates/update/' + props.pirate.id}>
+      <button>Update Pirate</button>
+      </Link>
+    </div>
+  )
+}
+
+export default SinglePirate;

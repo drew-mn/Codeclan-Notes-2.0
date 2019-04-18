@@ -1,0 +1,23 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  background-color: #eff3d8;
+  font-family: 'Gamja Flower', cursive;
+}
+
+.facts-btn {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.facts-btn button {
+  font-family: 'Gamja Flower', cursive;
+  font-size: 25px;
+  padding: 5px;
+  border: 2px solid #446197;
+  background-color: #fffff7
+}
